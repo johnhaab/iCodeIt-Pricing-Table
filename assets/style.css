@@ -250,15 +250,49 @@ body {
     font-weight: 500;
 }
 
-@media (min-width: 300px) and (max-width: 1000px) {
+@media (min-width: 300px) and (max-width: 1500px) {
 
     .container {
         display:grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 20rem  20rem  20rem 1fr;
         grid-template-rows: 1fr 10rem 10rem 10rem 10rem 1fr;
         width: 100vw;
         height: 100vh;
     }
 
+    .card {
+        background-color: rgba(255, 255, 255, 0.55);
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 6;
+        border-radius: .8rem;
+        box-shadow: rgba(255, 255, 255) 0px 1px 10px, rgb(255, 255, 255) 0px 0px 0px 15px, rgba(0, 0, 0, 0.2) 0px 0px 50px;
+    }
+
+    .free a {
+        width: 73%;
+    }
+
+    .free {
+        transform: translate(0px, 3rem);
+    }
+
+    .standard a {
+        width: 83%;
+        transform: translate(0px, 1.5rem);
+    }
+
+    .standard {
+        transform: translate(0px, 3rem);
+    }
+
+    .premium a {
+        width: 69%;
+    }
+
+    .premium {
+        transform: translate(0px, 3rem);
+    }
 
 }
